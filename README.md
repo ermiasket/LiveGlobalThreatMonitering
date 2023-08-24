@@ -1,8 +1,15 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Live Global Threat Monitering</h1>
 
 
 
 <h2>Description</h2>
+Purpose:
+ Monitor and log brute force attacks coming from different IP addresses around the world. The end result will display a live map of the attacks and location for visualization.
+
+ 
+Overview:
+- Create a Virtual Machine in Azure and turn the external firewall and Windows firewall off to make the VM extremely exposed to the internet.
+- Powershell transform logs will be used to obtain the geolocation. When failed log-in attempts are logged, they only include the IP address. With Powershell, IP addresses can be extracted and sent to a third-party API which will derive the longitude, latitude, etc. This will be sent back to the Virtual Machine.
 
 <br />
 
